@@ -1,0 +1,595 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Corporation Corporate Category Bootstrap Responsive Web Template | Home :: w3layouts</title>
+	
+	<!--/tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Corporation Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
+	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+		
+		
+		
+		
+		$(document).ready(function(){
+		var timesClicked = 0;
+
+		$("#hide1").click(function() {
+		timesClicked++;
+
+		if (timesClicked%2==0) {
+			var width = 169;
+			var height = 167;
+		
+			document.getElementById('hide3').style.display = 'block';
+			document.getElementById('hide2').style.display = 'block';
+			document.getElementById('hide4').style.display = 'block';
+			
+			$( ".col-md-3" ).addClass("w3_agile_stats_grid-top");
+			
+			$('.after_steps').next('.delete_steps').remove();
+			
+			
+			document.getElementById('hide1').style.height = height+"px";
+		} else {
+		var width = $(document).width() -35;
+			var height = $(document).height() -150;
+		
+			document.getElementById('hide3').style.display = 'none';
+			document.getElementById('hide2').style.display = 'none';
+			document.getElementById('hide4').style.display = 'none';
+			
+			$( "div" ).removeClass("w3_agile_stats_grid-top");
+			
+			$( '<div class="delete_steps"><hr><br><div class="agile_count_grid_left"><div><h4 id="day"></h4><h4 id="dot">.</h4><h4 id="month"></h4><h4 id="dot">.</h4><h4 id="year"></h4><br></div><div class="agile_count_grid_right"><p class="counter" id="counter_steps"></p> </div><div class="clearfix"> </div><h4>Yesterday&#39;s steps</h4></div>' ).insertAfter( ".after_steps" );
+			
+			var y_steps = window.localStorage.getItem("y_steps");
+		    document.getElementById("counter_steps").innerHTML=y_steps;
+			
+			var d = new Date();
+			
+			document.getElementById("day").innerHTML=d.getDate()-1;
+			document.getElementById("month").innerHTML=d.getMonth()+1;
+			document.getElementById("year").innerHTML=d.getFullYear();
+			
+			
+			document.getElementById('hide1').style.height = height+"px";
+		}
+
+		})
+		
+		
+		
+		
+		
+		$("#hide2").click(function() {
+		timesClicked++;
+
+		if (timesClicked%2==0) {
+			var width = 169;
+			var height = 167;
+		
+			document.getElementById('hide1').style.display = 'block';
+			document.getElementById('hide3').style.display = 'block';
+			document.getElementById('hide4').style.display = 'block';
+			
+			$( ".col-md-3" ).addClass("w3_agile_stats_grid-top");
+			
+			$('.after_calories').next('.delete_steps').remove();
+			
+			
+			document.getElementById('hide2').style.height = height+"px";
+		} else {
+		var width = $(document).width() -35;
+			var height = $(document).height() -150;
+		
+			document.getElementById('hide1').style.display = 'none';
+			document.getElementById('hide3').style.display = 'none';
+			document.getElementById('hide4').style.display = 'none';
+			
+			$( "div" ).removeClass("w3_agile_stats_grid-top");
+			
+			$( '<div class="delete_steps"><hr><br><div class="agile_count_grid_left"><div><h4 id="day"></h4><h4 id="dot">.</h4><h4 id="month"></h4><h4 id="dot">.</h4><h4 id="year"></h4><br></div><div class="agile_count_grid_right"><p class="counter" id="counter_calories"></p> </div><div class="clearfix"> </div><h4>Yesterday&#39;s calories burned</h4></div>' ).insertAfter( ".after_calories" );
+			
+			var y_calories = window.localStorage.getItem("y_calories");
+		    document.getElementById("counter_calories").innerHTML=y_calories;
+			
+			var d = new Date();
+			
+			document.getElementById("day").innerHTML=d.getDate()-1;
+			document.getElementById("month").innerHTML=d.getMonth()+1;
+			document.getElementById("year").innerHTML=d.getFullYear();
+			
+			document.getElementById('hide2').style.height = height+"px";
+		}
+
+		})
+		
+		
+		
+		
+		$("#hide3").click(function() {
+		timesClicked++;
+
+		if (timesClicked%2==0) {
+			var width = 169;
+			var height = 167;
+		
+			document.getElementById('hide1').style.display = 'block';
+			document.getElementById('hide2').style.display = 'block';
+			document.getElementById('hide4').style.display = 'block';
+			
+			$( ".col-md-3" ).addClass("w3_agile_stats_grid-top");
+			
+			$('.after_weight').next('.delete_steps').remove();
+			
+			
+			document.getElementById('hide3').style.height = height+"px";
+		} else {
+		var width = $(document).width() -35;
+			var height = $(document).height() -150;
+		
+			document.getElementById('hide1').style.display = 'none';
+			document.getElementById('hide2').style.display = 'none';
+			document.getElementById('hide4').style.display = 'none';
+			
+			$( "div" ).removeClass("w3_agile_stats_grid-top");
+			
+			$( '<div class="delete_steps"><hr><br><div class="agile_count_grid_left"><div><h4 id="day"></h4><h4 id="dot">.</h4><h4 id="month"></h4><h4 id="dot">.</h4><h4 id="year"></h4><br></div><div class="agile_count_grid_right"><p class="counter" id="counter_weight"></p> </div><div class="clearfix"> </div><h4>Yesterday&#39;s weight</h4></div>' ).insertAfter( ".after_weight" );
+			
+			<!--var y_steps = window.localStorage.getItem("y_steps");-->
+		    document.getElementById("counter_weight").innerHTML=70;
+			
+			var d = new Date();
+			
+			document.getElementById("day").innerHTML=d.getDate()-1;
+			document.getElementById("month").innerHTML=d.getMonth()+1;
+			document.getElementById("year").innerHTML=d.getFullYear();
+			
+			document.getElementById('hide3').style.height = height+"px";
+		}
+
+		})
+		
+		
+		
+		
+		
+		
+		
+		$("#hide4").click(function() {
+		timesClicked++;
+
+		if (timesClicked%2==0) {
+			var width = 169;
+			var height = 167;
+		
+			document.getElementById('hide1').style.display = 'block';
+			document.getElementById('hide2').style.display = 'block';
+			document.getElementById('hide3').style.display = 'block';
+			
+			$( ".col-md-3" ).addClass("w3_agile_stats_grid-top");
+			
+			$('.after_distance').next('.delete_steps').remove();
+			
+			
+			document.getElementById('hide4').style.height = height+"px";
+		} else {
+		var width = $(document).width() -35;
+			var height = $(document).height() -150;
+		
+			document.getElementById('hide1').style.display = 'none';
+			document.getElementById('hide2').style.display = 'none';
+			document.getElementById('hide3').style.display = 'none';
+			
+			$( "div" ).removeClass("w3_agile_stats_grid-top");
+			
+			$( '<div class="delete_steps"><hr><br><div class="agile_count_grid_left"><div><h4 id="day"></h4><h4 id="dot">.</h4><h4 id="month"></h4><h4 id="dot">.</h4><h4 id="year"></h4><br></div><div class="agile_count_grid_right"><p class="counter" id="counter_distance"></p> </div><div class="clearfix"> </div><h4>Yesterday&#39;s distance walked</h4></div>' ).insertAfter( ".after_distance" );
+			
+			var y_distance = window.localStorage.getItem("y_distance");
+		    document.getElementById("counter_distance").innerHTML=y_distance;
+			
+			var d = new Date();
+			
+			document.getElementById("day").innerHTML=d.getDate()-1;
+			document.getElementById("month").innerHTML=d.getMonth()+1;
+			document.getElementById("year").innerHTML=d.getFullYear();
+			
+			document.getElementById('hide4').style.height = height+"px";
+		}
+
+		})
+		
+		
+		
+		
+		
+		
+		});
+		
+		
+		
+		
+		
+		
+		function goBack() 
+			{
+				window.history.back();
+			}
+		
+		
+		
+		
+		
+		
+
+	</script>
+	<!--//tags -->
+
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	
+	<!-- //for bootstrap carousel slider -->
+	
+	<!-- fontawesome icons  -->
+	<link href="css/font-awesome.css" rel="stylesheet">
+	
+	<!-- google fonts -->
+	<link href="//fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+	<!-- //google fonts -->
+	
+	
+        <link rel="stylesheet" href="css/demo.css">
+        <!-- Pushy CSS -->
+        <link rel="stylesheet" href="css/pushy.css">
+        
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		
+		
+		
+</head>
+
+<body onload="openRegistration()">
+	
+<!-- header -->
+<!--<div class="header">
+	<div class="agileits_top_menu">
+		<div class="container">
+			<div class="w3l_header_left">
+				<ul>
+					<li><i class="fa fa-phone" aria-hidden="true"></i> +112 223 3345</li>
+					<li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com">info@example.com</a></li>
+					<li><i class="fa fa-map-marker" aria-hidden="true"></i> 3241 USA, New York City</li>
+				</ul>
+			</div>
+			<div class="w3l_header_right">
+				<div class="w3ls-social-icons text-left">
+					<a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+					<a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+					<a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a>
+					<a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+					<a class="login" href="#" data-toggle="modal" data-target="#myModal1">Login</a>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<div class="content white agile-info">
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+					<a class="navbar-brand" href="index.html">
+						<h1>Corporation</h1>
+					</a>
+				</div>-->
+				<!--/.navbar-header
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<nav>
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="codes.html">Short Codes</a></li>
+									<li><a href="icons.html">Icons</a></li>
+								</ul>
+							</li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</nav>
+	</div>
+</div>
+<!-- //header -->
+<div>
+<button class="back-btn" onclick="goBack()"><div class="back">&#10153;</div>Back</button>
+<button class="menu-btn">&#9776; Menu</button>
+</div>
+
+<!-- Pushy Menu -->
+        <nav class="pushy pushy-left" data-focus="#first-link">
+            <div class="pushy-content">
+                <ul>
+				<li style="padding-left: 70px; padding-top:0px; position:absolute; color: white;" id="menu_name" > </li>
+				
+				<hr>
+				<hr>
+				
+                    <li class="pushy-link"><a href="index.html">Home</a></li>
+                    <li class="pushy-link"><a href="map.html">Map</a></li>
+                    <li class="pushy-link"><a href="#" onclick="changeRegistration()">Change details</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Site Overlay -->
+        <div class="site-overlay"></div>
+		
+		
+<!-- counter -->
+
+<div class="services-bottom stats" style="background-image: url(images/2.jpg); position:static;">
+
+	<div class="banner-dott1" style="height: 600px;">
+	
+		<div class="container">
+		
+		
+		
+			<h3 class="heading">Healthy App</h3>
+			
+		  <div class="wthree-agile-counter">
+		  <div class="col-md-3 w3_agile_stats_grid-top">
+			<div class="w3_agile_stats_grid" id="hide1" >
+				<div class="agile_count_grid_left">
+				<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+				</div>
+				<div class="agile_count_grid_right">
+					<p class="counter" id="steps"></p> 
+					<script>
+					var steps = window.localStorage.getItem("steps");
+					document.getElementById("steps").innerHTML = steps; 
+					//window.localStorage.setItem("steps1", steps);
+					
+					if(steps == null)
+					{
+						document.getElementById("steps").innerHTML = 0;
+								
+					}		
+					
+					
+					
+					var name1 = window.localStorage.getItem("name1");
+					document.getElementById("menu_name").innerHTML = name1;
+					if(name1 == null)
+					{
+						function openRegistration()
+						{
+							document.getElementById("startrunning").click();
+						} 
+					}	
+					
+					function changeRegistration()
+						{
+							document.getElementById("startrunning").click();
+							
+						} 
+					
+					function store()
+					{
+						window.localStorage.setItem("name1", document.getElementById("name1").value);
+						name1 = window.localStorage.getItem("name1");
+						window.localStorage.setItem("weight1", document.getElementById("weight1").value);
+						
+						
+					}
+						
+						
+						
+						
+						
+						if(name1 == null)
+						{
+							window.localStorage.setItem("y_steps", 0);
+							window.localStorage.setItem("y_calories", 0);
+							window.localStorage.setItem("y_distance", 0);
+						}
+					function refreshAt(hours, minutes, seconds) {
+    var now = new Date();
+    var then = new Date();
+
+    if(now.getHours() > hours ||
+       (now.getHours() == hours && now.getMinutes() > minutes) ||
+        now.getHours() == hours && now.getMinutes() == minutes && now.getSeconds() >= seconds) 
+
+        {
+            then.setDate(now.getDate() + 1);
+        }
+    then.setHours(hours);
+    then.setMinutes(minutes);
+    then.setSeconds(seconds);
+
+    var timeout = (then.getTime() - now.getTime());
+    setTimeout(function() {
+	
+	var y_steps = window.localStorage.getItem("steps");
+	var y_calories = window.localStorage.getItem("calories");
+	var y_distance = window.localStorage.getItem("distance");
+	
+	
+	
+	window.localStorage.setItem("steps", 0);
+	window.localStorage.setItem("calories", 0);
+	window.localStorage.setItem("distance", 0);
+	
+	window.localStorage.setItem("y_steps", y_steps);
+	window.localStorage.setItem("y_calories", y_calories);
+	window.localStorage.setItem("y_distance", y_distance);
+	
+	window.location.reload(true);
+	
+	
+	}, timeout);
+}
+refreshAt(0, 00, 00);
+					</script>
+				</div>
+				<div class="clearfix"> </div>
+				<h4 class="after_steps">Steps</h4>
+			</div>
+		</div>
+		<div class="col-md-3 w3_agile_stats_grid-top">
+			<div class="w3_agile_stats_grid" id="hide2">
+				<div class="agile_count_grid_left">
+					<span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+				</div>
+				<div class="agile_count_grid_right">
+					<p class="counter" id="calories"></p> 
+					<script>
+					var calories = window.localStorage.getItem("calories");
+					document.getElementById("calories").innerHTML = calories;
+					if(calories == null)
+					{
+						document.getElementById("calories").innerHTML = 0;
+					}
+					</script>
+				</div>
+				<div class="clearfix"> </div>
+				<h4 class="after_calories">Calories burned</h4>
+			</div>
+		</div>
+		<div class="col-md-3 w3_agile_stats_grid-top">
+			<div class="w3_agile_stats_grid" id="hide3">
+				<div class="agile_count_grid_left">
+					<span class="glyphicon glyphicon-modal-window" aria-hidden="true"></span>
+				</div>
+				<div class="agile_count_grid_right">
+					<p class="counter" id="weight"></p>
+					<script>
+					
+					var weight = window.localStorage.getItem("weight1");
+					document.getElementById("weight").innerHTML = weight;
+					if(weight == null)
+					{
+						document.getElementById("weight").innerHTML = 0;
+					}
+					</script>
+					
+				</div>
+				<div class="clearfix"> </div>
+				<h4 class="after_weight">Weight</h4>
+			</div>
+		</div>
+		<div class="col-md-3 w3_agile_stats_grid-top">
+			<div class="w3_agile_stats_grid" id="hide4">
+				<div class="agile_count_grid_left">
+					<span class="fa fa-map-marker" aria-hidden="true"></span>
+				</div>
+				<div class="agile_count_grid_right">
+					<p class="counter" id="distance"></p> 
+					<script>
+					var value = window.localStorage.getItem("distance");
+					document.getElementById("distance").innerHTML = value;
+					if(value == null)
+					{
+						document.getElementById("distance").innerHTML = 0;
+					}
+					</script>
+				</div>
+				<div class="clearfix">  </div>
+				<h4 class="after_distance">Distance walked</h4>
+			</div>
+		</div>
+			<div class="clearfix"> </div>
+		</div>
+		<a id="startrunning" style="display: none;" data-backdrop="static" class="login" href="#" data-toggle="modal" data-target="#myModal1">Login</a>
+	</div>
+	</div>
+</div>
+<!-- //counter -->
+
+
+
+<!-- signin Model -->
+<!-- Modal1 -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" style="display:visible">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+			</div>
+			<div class="modal-body modal-body-sub_agile">
+				<div class="main-mailposi">
+					<span class="fa fa-envelope-o" aria-hidden="true"></span>
+				</div>
+				<div class="modal_body_left modal_body_left1">
+					<h3 class="agileinfo_sign">Enter your Details</h3>
+					<form action="#" method="post">
+						<div class="styled-input agile-styled-input-top">
+							<input type="text" placeholder="Name" name="Name" id="name1" required="">
+							<input type="text" placeholder="Weight" name="weight" id="weight1" required="">
+						</div>
+						<input type="submit" onclick="store()" value="Login">
+					</form>
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<!-- //Modal content-->
+	</div>
+</div>
+<!-- //Modal1 -->
+<!-- //signin Model -->
+
+	
+	<!-- js -->
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+	
+	<!-- Pushy JS -->
+        <script src="js/pushy.min.js"></script>
+	
+	<!-- stats -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.countup.js"></script>
+	<script>
+		$('.counter').countUp();
+	</script>
+	<!-- //stats -->
+
+
+</body>
+</html>
